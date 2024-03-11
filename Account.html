@@ -12,7 +12,7 @@
             <p style="font-family: 'Cormorant Garamond', serif; margin-top: 1.4em;"><a href="index.html">P L A N T O P I A</a></p>
         </div>
         <div id="right-side">
-            <a href="Product1.html">Plants</a>
+            <a href="Plants.html">Plants</a>
             <a href="">Collections</a>
             <a href="Blog.html">Blog</a>
             <a href="Account.html"><img style="width: 1.5em; height: auto;" src="https://freesvg.org/img/abstract-user-flat-1.png" alt=""></a>
@@ -27,36 +27,40 @@
 <!--------------------------------------------------------------------------------------------------------------->
 <footer>
     <div id="footer">
-        <div id="footer-section">
-            <img id="logo" src="logo.png">
+        <div id="FooterTopSection">
+            <div id="footer-section">
+                <img id="logo" src="logo.png">
+            </div>
+            <div id="footer-section" class="AboutUs">
+                <h2>About Us</h2>
+                <p>
+                    At Plantopia, we're passionate about bringing nature into your life. 
+                    With a commitment to quality and sustainability, we offer a range of plants to transform your living spaces.
+                </p>
+            </div>
         </div>
-        <div id="footer-section" class="AboutUs">
-            <h2>About Us</h2>
-            <p>
-                At Plantopia, we're passionate about bringing nature into your life. 
-                With a commitment to quality and sustainability, we offer a range of plants to transform your living spaces.
-            </p>
-        </div>
-        <div id="footer-section" class="ContactUs">
-            <h2>Contact us</h2>
-            <p>
-                <img src="mail.png" style="width: 1.3em; margin-right: 0.5em;">
-                <span>email address</span>
-            </p>
-            <p>
-                <img src="instagram.png" style="margin-right: 0.5em;">
-                <a href="">@Plantopia</a>
-            </p>
-            <p>
-                <img src="facebook.png" style="margin-right: 0.5em;">
-                <a href="">@Plantopia</a>
-            </p>
-        </div>
-        <div id="footer-section" class="CustomerService">
-            <h2>Customer Service</h2>
-            <a href="FAQ.html">FAQ</a>
-            <a href="Returns.html">Returns</a>
-            <a href="TermsConditions.html">Terms & Conditions</a>
+        <div id="FooterBottomSection">
+            <div id="footer-section" class="ContactUs">
+                <h2>Contact us</h2>
+                <p>
+                    <img src="mail.png" style="width: 1.3em; margin-right: 0.5em;">
+                    <span>email address</span>
+                </p>
+                <p>
+                    <img src="instagram.png" style="margin-right: 0.5em;">
+                    <a href="">@Plantopia</a>
+                </p>
+                <p>
+                    <img src="facebook.png" style="margin-right: 0.5em;">
+                    <a href="">@Plantopia</a>
+                </p>
+            </div>
+            <div id="footer-section" class="CustomerService">
+                <h2>Customer Service</h2>
+                <a href="FAQ.html">FAQ</a>
+                <a href="Returns.html">Returns</a>
+                <a href="TermsConditions.html">Terms & Conditions</a>
+            </div>
         </div>
     </div>
     <div id="AllRights">
@@ -64,6 +68,7 @@
     </div>
 </footer>
 
+</body>
 <style>
     body {
         margin: 0;
@@ -120,6 +125,28 @@
         text-decoration: underline;
     }
 
+    @media screen and (min-width: 850px) {
+        #left-side,
+        #right-side {
+            width: 100%;
+        }
+    }
+
+    /* For wider screens, display the articles side by side */
+    @media screen and (max-width: 849px) {
+        #navbar {
+            display: flex;
+            flex-direction: column;
+            margin: 1em;
+        }
+        #left-side,
+        #right-side {
+            width: 100%; /* Adjust width as needed */
+            display: flex;
+            justify-content: center;
+        }
+    }
+
 /***************************************************************************************************************/
 
     iframe {
@@ -129,7 +156,7 @@
 
 /***************************************************************************************************************/
 
-    footer {
+footer {
         height: auto;
         margin-top: 1em;
     }
@@ -143,9 +170,8 @@
     #footer-section {
         display: flex;
         flex-direction: column;
-        width: 100%;
-        margin-left: 1em;
-        margin-right: 1em;
+        width: 90%;
+        margin-right: 5%;
     }
 
     #footer-section a {
@@ -182,6 +208,35 @@
         text-align: center;
         padding-top: 0.5em;
     }
+
+    @media screen and (min-width: 700px) {
+        #footer-section {
+            width: 100%;
+        }
+        #FooterTopSection, 
+        #FooterBottomSection {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+    }
+
+    /* For wider screens, display the articles side by side */
+    @media screen and (max-width: 699px) {
+        #footer {
+            display: flex;
+            flex-direction: column;
+            margin: 1em;
+        }
+        #FooterTopSection, 
+        #FooterBottomSection {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+        #footer-section {
+            width: 50%;
+        }
+    }
 </style>
-</body>
 </html>
