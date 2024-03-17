@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="icon" href="logo-no_bg.png">
+    <link style="border-radius: 50%;" rel="icon" href="logo-no_bg.png">
     <title>Plantopia</title>
 </head>
 <body>
@@ -15,7 +15,6 @@
         </div>
         <div id="right-side">
             <a href="Plants.html">Plants</a>
-            <a href="">Collections</a>
             <a href="Blog.html">Blog</a>
             <a href="Account.html"><img style="width: 1.5em; height: auto;" src="https://freesvg.org/img/abstract-user-flat-1.png" alt=""></a>
             <a href=""><img style="width: 1.5em; height: auto;" src="https://cdn.iconscout.com/icon/free/png-256/free-shopping-cart-1768065-1502238.png" alt=""></a>
@@ -28,10 +27,33 @@
         <h1>A study showed, plants are the best decoration*</h1>
         <h5>*The study only included Plantopia staff</h5>
     </div>
-<div id="Part2">
-    <div id="TopProducts1" class="container">
-        <div id="TopLeft2Products" class="Product">
-            <div id="Left-Section1">
+<div id="Products" class="container">
+    <div id="DivForCenterLink">
+        <div id="Pair">
+            <div id="ProductDisplay">
+                <div id="image">
+                    <img src="https://img.freepik.com/premium-photo/plant-white-pot-with-white-background_655090-81802.jpg" alt="">
+                </div>
+                <div class="center-link">
+                    <a href="#">Shop Now ⟶</a>
+                </div>  
+            </div>
+            <div id="ProductDisplay">
+                <div id="image">
+                    <img src="https://img.freepik.com/premium-photo/white-pot-with-plant-it-that-says-succulent_655090-81750.jpg" alt="">
+                </div>
+                <div class="center-link">
+                    <a href="#">Shop Now ⟶</a>
+                </div>        
+            </div>  
+        </div>
+        <div id="MoreLikeThisLink" class="center-link" style="margin-top: -1em; margin-bottom: 2em;">
+            <a href="#">More Like This</a>
+        </div> 
+    </div> 
+    <div id="DivForCenterLink">
+        <div id="Pair" style="margin-left: 2%;">
+            <div id="ProductDisplay">
                 <div id="image">
                     <img src="https://img.freepik.com/premium-photo/plant-white-pot-with-white-background_655090-81802.jpg" alt="">
                 </div>
@@ -39,8 +61,7 @@
                     <a href="#">Shop Now ⟶</a>
                 </div>
             </div>
-
-            <div id="Middle-Section1" class="Product">
+            <div id="ProductDisplay">
                 <div id="image">
                     <img src="https://img.freepik.com/premium-photo/white-pot-with-plant-it-that-says-succulent_655090-81750.jpg" alt="">
                 </div>
@@ -49,69 +70,11 @@
                 </div>        
             </div>
         </div>
-
-        <div id="TopRight2Products" class="Product">
-            <div id="Middle-Section1-2">
-                <div id="image">
-                    <img src="https://img.freepik.com/premium-photo/plant-white-pot-with-white-background_655090-81802.jpg" alt="">
-                </div>
-                <div class="center-link">
-                    <a href="#">Shop Now ⟶</a>
-                </div>
-            </div>
-
-            <div id="Right-Section1" class="Product">
-                <div id="image">
-                    <img src="https://img.freepik.com/premium-photo/white-pot-with-plant-it-that-says-succulent_655090-81750.jpg" alt="">
-                </div>
-                <div class="center-link">
-                    <a href="#">Shop Now ⟶</a>
-                </div>        
-            </div>
-        </div>
+        <div id="MoreLikeThisLink" class="center-link" style="margin-top: -1em; margin-bottom: 2em;">
+            <a href="#">More Like This</a>
+        </div> 
     </div>
-    <div id="TopProducts2" class="container">
-        <div id="BottomLeft2Products" class="Product">
-            <div id="Left-Section2">
-                <div id="image">
-                    <img src="https://img.freepik.com/premium-photo/plant-white-pot-with-white-background_655090-81802.jpg" alt="">
-                </div>
-                <div class="center-link">
-                    <a href="#">Shop Now ⟶</a>
-                </div>
-            </div>
-
-            <div id="Middle-Section2" class="Product">
-                <div id="image">
-                    <img src="https://img.freepik.com/premium-photo/white-pot-with-plant-it-that-says-succulent_655090-81750.jpg" alt="">
-                </div>
-                <div class="center-link">
-                    <a href="#">Shop Now ⟶</a>
-                </div>        
-            </div>
-        </div>
-
-        <div id="BottomRight2Products" class="Product">
-            <div id="Middle-Section2-2">
-                <div id="image">
-                    <img src="https://img.freepik.com/premium-photo/plant-white-pot-with-white-background_655090-81802.jpg" alt="">
-                </div>
-                <div class="center-link">
-                    <a href="#">Shop Now ⟶</a>
-                </div>
-            </div>
-
-            <div id="Right-Section2" class="Product">
-                <div id="image">
-                    <img src="https://img.freepik.com/premium-photo/white-pot-with-plant-it-that-says-succulent_655090-81750.jpg" alt="">
-                </div>
-                <div class="center-link">
-                    <a href="#">Shop Now ⟶</a>
-                </div>        
-            </div>
-        </div>
-    </div>
-</div>
+</div>   
 
     <div id="Convincing">
         <h1>Why Shop With <span style="font-style: italic; color: #054D3B;">Plantopia</span>?</h1>
@@ -283,14 +246,16 @@
     @media screen and (max-width: 849px) {
         #navbar {
             display: flex;
-            flex-direction: column;
-            margin: 1em;
+            flex-direction: column;            
         }
         #left-side,
         #right-side {
             width: 100%; /* Adjust width as needed */
             display: flex;
             justify-content: center;
+        }
+        #left-side img{
+            display: none;
         }
     }
 
@@ -311,42 +276,21 @@
         font-weight: bolder;
     }
 
-    #Part2 {
-            width: 100%;
-        }
-
-    #TopProducts1, #TopProducts2 {
-        display: flex;
-        flex-direction: row;
+    #Products {
         width: 100%;
-        margin: 0em;
-        height: auto;
-    }
-
-    #TopLeft2Products, #TopRight2Products, #BottomLeft2Products, #BottomRight2Products {
-        display: flex;
-        flex-direction: row;
-        width: 98%;
-        margin-left: 1%;
-    }
-
-    .Product {
-        flex: 1;
-        width: 30%;
-        background-color: #FAEDCD;
-        display: flex;
-        border-radius: 25px;
-        flex-direction: column;
-        padding-bottom: 2em;
-        margin: auto;
-        margin: 1em;
         margin-top: 1em;
     }
 
-    #Left-Section1, #Left-Section2, #Middle-Section1, #Middle-Section1-2,
-    #Middle-Section2, #Middle-Section2-2, #Right-Section1, #Right-Section2 {
-        margin-left: 1em;
-        margin-top: 0em;
+    #Pair {
+        width: 98%;
+        margin: auto;
+        background-color: #FAEDCD;
+        border-radius: 25px;
+        padding-bottom: 2em;
+    }
+
+    #ProductDisplay {
+        margin: 1em;
     }
 
     #image {
@@ -354,10 +298,9 @@
         justify-content: center;
     }
 
-    #Left-Section1 img, #Middle-Section1 img, #Middle-Section1-2 img, #Right-Section1 img,
-    #Left-Section2 img, #Middle-Section2 img, #Middle-Section2-2 img, #Right-Section2 img {
-        height: 18em;
-        width: auto;
+    #ProductDisplay img {
+        width: 100%;
+        height: auto;
         margin-top: 2em;
         border-radius: 25px;
     }
@@ -368,7 +311,7 @@
 
     .center-link a {
         border: 2px solid black;
-        background-color: #FAEDCD;
+        background-color: white;
         text-align: center;
         width: 40%;
         margin-top: 2.5em;
@@ -379,64 +322,65 @@
     }
 
     .center-link a:hover {
-        background-color: #D4A373;
-        border: 2px solid #D4A373;
+        background-color: #f6dd9f;
+        border: 2px solid black;
         letter-spacing: normal;
     }
 
-    @media screen and (min-width: 1201px) {
-        #Left-Section1, #Middle-Section1, #Middle-Section1-2, #Right-Section1,
-        #Left-Section2, #Middle-Section2, #Middle-Section2-2, #Right-Section2 {
+    @media screen and (min-width: 1101px) {
+        #Products {
+            display: flex;
+            flex-direction: row;
             width: 98%;
+            margin: auto;
+            margin-bottom: 0;
         }
-        #TopLeft2Products, #TopRight2Products, #BottomLeft2Products, #BottomRight2Products {
-            margin-bottom: 0em;
+        
+        #Pair {
+            display: flex;
+            flex-direction: row;
+            width: 98%;
+            margin: auto;
+            margin-top: 1em;
         }
     }
 
     /* For wider screens, display the articles side by side */
-    @media screen and (min-width: 650px) and (max-width: 1200px) {
-        #TopProducts1, #TopProducts2 {
+    @media screen and (min-width: 500px) and (max-width: 1100px) {
+        #Products {
             display: flex;
             flex-direction: column;
         }
 
-        #TopLeft2Products, #TopRight2Products, #BottomLeft2Products, #BottomRight2Products {
-            display: flex;
-            flex-direction: row;
-            margin-bottom: 1em;
-            border-radius: 25px;
-        }
-
-        #TopRight2Products {
+        #Pair {
             display: flex;
             flex-direction: row;
         }
         
-        #Left-Section1, #Middle-Section1, #Middle-Section1-2, #Right-Section1,
-        #Left-Section2, #Middle-Section2, #Middle-Section2-2, #Right-Section2 {
+        #ProductDisplay {
             width: 50%;
-            margin-top: 1em;
         }
     }
 
-    @media screen and (max-width: 649px) {
-        #TopProducts1, #TopProducts2 {
+    @media screen and (max-width: 499px) {
+        #Products {
             display: flex;
             flex-direction: column;
         }
         
-        #TopLeft2Products, #TopRight2Products, #BottomLeft2Products, #BottomRight2Products {
+        #Pair {
             display: flex;
             flex-direction: column;
-            margin-bottom: 0;
+            margin-bottom: 1em;
         }
         
-        #Left-Section1, #Middle-Section1, #Middle-Section1-2, #Right-Section1, 
-        #Left-Section2, #Middle-Section2, #Middle-Section2-2, #Right-Section2 {
-            width: 100%;
+        #ProductDisplay {
+            width: 95%;
             margin-top: 1em;
-            margin-left: 0;
+            margin: auto;
+        }
+        #MoreLikeThisLink {
+            display: none;
         }
     }
 

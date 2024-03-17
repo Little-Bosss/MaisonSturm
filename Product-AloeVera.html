@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="logo-no_bg.png">
-    <title>Account</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Plantopia</title>
 </head>
 <body>
     <div id="navbar">
@@ -13,7 +13,7 @@
             <p style="font-family: 'Cormorant Garamond', serif; margin-top: 1.4em;"><a href="index.html">P L A N T O P I A</a></p>
         </div>
         <div id="right-side">
-            <a href="Plants.html">Plants</a>
+            <a href="">Plants</a>
             <a href="">Collections</a>
             <a href="Blog.html">Blog</a>
             <a href="Account.html"><img style="width: 1.5em; height: auto;" src="https://freesvg.org/img/abstract-user-flat-1.png" alt=""></a>
@@ -23,12 +23,12 @@
 
 <!--------------------------------------------------------------------------------------------------------------->
 
-<iframe src="LogInFrame.html" frameborder="0"></iframe> 
+    <div></div>
 
 <!--------------------------------------------------------------------------------------------------------------->
-<footer>
-    <div id="footer">
-        <div id="FooterTopSection">
+
+    <footer>
+        <div id="footer">
             <div id="footer-section">
                 <img id="logo" src="logo.png">
             </div>
@@ -39,8 +39,6 @@
                     With a commitment to quality and sustainability, we offer a range of plants to transform your living spaces.
                 </p>
             </div>
-        </div>
-        <div id="FooterBottomSection">
             <div id="footer-section" class="ContactUs">
                 <h2>Contact us</h2>
                 <p>
@@ -63,11 +61,10 @@
                 <a href="TermsConditions.html">Terms & Conditions</a>
             </div>
         </div>
-    </div>
-    <div id="AllRights">
-        <p>©Plantopia 2023. All rights reserved.</p>
-    </div>
-</footer>
+        <div id="AllRights">
+            <p>©Plantopia 2023. All rights reserved.</p>
+        </div>
+    </footer>
 
 </body>
 <style>
@@ -126,38 +123,13 @@
         text-decoration: underline;
     }
 
-    @media screen and (min-width: 850px) {
-        #left-side,
-        #right-side {
-            width: 100%;
-        }
-    }
+/***************************************************************************************************************/
 
-    /* For wider screens, display the articles side by side */
-    @media screen and (max-width: 849px) {
-        #navbar {
-            display: flex;
-            flex-direction: column;
-            margin: 1em;
-        }
-        #left-side,
-        #right-side {
-            width: 100%; /* Adjust width as needed */
-            display: flex;
-            justify-content: center;
-        }
-    }
+
 
 /***************************************************************************************************************/
 
-    iframe {
-        width: 90%;
-        height: 45em;
-    }
-
-/***************************************************************************************************************/
-
-footer {
+    footer {
         height: auto;
         margin-top: 1em;
     }
@@ -171,8 +143,9 @@ footer {
     #footer-section {
         display: flex;
         flex-direction: column;
-        width: 90%;
-        margin-right: 5%;
+        width: 100%;
+        margin-left: 1em;
+        margin-right: 1em;
     }
 
     #footer-section a {
@@ -208,36 +181,6 @@ footer {
     #AllRights {
         text-align: center;
         padding-top: 0.5em;
-    }
-
-    @media screen and (min-width: 700px) {
-        #footer-section {
-            width: 100%;
-        }
-        #FooterTopSection, 
-        #FooterBottomSection {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-        }
-    }
-
-    /* For wider screens, display the articles side by side */
-    @media screen and (max-width: 699px) {
-        #footer {
-            display: flex;
-            flex-direction: column;
-            margin: 1em;
-        }
-        #FooterTopSection, 
-        #FooterBottomSection {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-        }
-        #footer-section {
-            width: 50%;
-        }
     }
 </style>
 </html>
