@@ -8,6 +8,10 @@
 </head>
 <body>
     <div id="navbar">
+        <div id="Top">
+            <a href="Account.html"><img style="width: 2em; height: auto;" src="https://freesvg.org/img/abstract-user-flat-1.png" alt=""></a>
+            <a href=""><img style="width: 2em; height: auto;" src="https://cdn.iconscout.com/icon/free/png-256/free-shopping-cart-1768065-1502238.png" alt=""></a>
+        </div>
         <div id="left-side">
             <img src="logo.png" alt="logo">
             <p style="font-family: 'Cormorant Garamond', serif; margin-top: 1.4em;"><a href="index.html">Maison Sturm</a></p>
@@ -16,8 +20,8 @@
             <a href="Crochets.html">Crochets</a>
             <a href="Pattern.html">Patterns</a>
             <a href="#">Materials</a>
-            <a href="Account.html"><img style="width: 1.5em; height: auto;" src="https://freesvg.org/img/abstract-user-flat-1.png" alt=""></a>
-            <a href=""><img style="width: 1.5em; height: auto;" src="https://cdn.iconscout.com/icon/free/png-256/free-shopping-cart-1768065-1502238.png" alt=""></a>
+            <a class="NavbarIcons" href="Account.html"><img style="width: 1.5em; height: auto;" src="https://freesvg.org/img/abstract-user-flat-1.png" alt=""></a>
+            <a class="NavbarIcons" href=""><img style="width: 1.5em; height: auto;" src="https://cdn.iconscout.com/icon/free/png-256/free-shopping-cart-1768065-1502238.png" alt=""></a>
         </div>
     </div>
 
@@ -118,17 +122,28 @@
     }
 
     #left-side a {
-        color: #054D3B;
+        color: black;
         text-decoration: none;
         font-size: 2em;
         transition: 0.5s ease;
+    }
+
+    #Top {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #Top a {
+        padding-right: 0.5em;
+        padding-left: 0.5em;
     }
 
     #left-side a:hover {
         letter-spacing: 0.1em;
     }
 
-    #right-side {
+    #right-side, #NavbarIcons{
         text-align: right;
         flex: 1;
         width: 50%;
@@ -149,15 +164,43 @@
         text-decoration: underline;
     }
 
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 800px) {
         #left-side,
         #right-side {
             width: 100%;
         }
+
+        #Top {
+            display: none;
+        }
     }
 
     /* For wider screens, display the articles side by side */
-    @media screen and (max-width: 749px) {
+    @media screen and (min-width: 601px) and (max-width: 799px) {
+        #navbar {
+            display: flex;
+            flex-direction: column;
+            margin: 1em;
+        }
+        #left-side,
+        #right-side {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        #left-side img{
+            display: none;
+        }
+        #Top {
+            display: none;
+        }
+        
+    }
+
+    @media screen and (max-width: 600px) {
+        .NavbarIcons {
+            display: none;
+        }
         #navbar {
             display: flex;
             flex-direction: column;
