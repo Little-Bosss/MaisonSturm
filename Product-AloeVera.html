@@ -2,20 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Plantopia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo-no_bg.png">
+    <title>Dog</title>
 </head>
 <body>
     <div id="navbar">
         <div id="left-side">
             <img src="logo.png" alt="logo">
-            <p style="font-family: 'Cormorant Garamond', serif; margin-top: 1.4em;"><a href="index.html">P L A N T O P I A</a></p>
+            <p style="font-family: 'Cormorant Garamond', serif; margin-top: 1.4em;"><a href="index.html">Maison Sturm</a></p>
         </div>
         <div id="right-side">
-            <a href="">Plants</a>
-            <a href="">Collections</a>
-            <a href="Blog.html">Blog</a>
+            <a href="Crochets.html">Crochets</a>
+            <a href="Pattern.html">Patterns</a>
+            <a href="#">Materials</a>
             <a href="Account.html"><img style="width: 1.5em; height: auto;" src="https://freesvg.org/img/abstract-user-flat-1.png" alt=""></a>
             <a href=""><img style="width: 1.5em; height: auto;" src="https://cdn.iconscout.com/icon/free/png-256/free-shopping-cart-1768065-1502238.png" alt=""></a>
         </div>
@@ -23,22 +23,126 @@
 
 <!--------------------------------------------------------------------------------------------------------------->
 
-    <div></div>
+    <div id="MainContent">
+        <div id="LineContainer">
+            <hr id="Line">
+        </div> 
+        <div id="TitleArea">
+            <a href="Crochets.html#Part1" style="color: black; text-decoration: none;">
+                <img style="width: 1.3em; height: 1.3em;" src="https://cdn-icons-png.flaticon.com/512/54/54517.png" alt="">
+            </a>
+            <div id="ActualTitle">
+                Adorable Dog
+            </div>
+        </div>
+        <div id="MainArea">
+            <div id="Half">
+                <div class="displayed-image-section">
+                    <img id="displayed-image" src="Crochet_Dog.png" alt="Displayed Image">
+                </div>
+                <div class="thumbnail-section">
+                    <img src="Crochet_Dog.png" alt="Thumbnail 1" onclick="changeImage(1)" class="active">
+                    <img src="Crochet_Cat.png" alt="Thumbnail 2" onclick="changeImage(2)">
+                    <img src="Pattern-Lama.png" alt="Thumbnail 3" onclick="changeImage(3)">
+                    <img src="Pattern_Dog.png" alt="Thumbnail 4" onclick="changeImage(4)">
+                    <img src="Crochet_Cat.png" alt="Thumbnail 5" onclick="changeImage(5)">
+                    <img src="Pattern-Lama.png" alt="Thumbnail 6" onclick="changeImage(6)">
+                </div>
+            </div>
+            <div id="Half" style="background-color: #FAEDCD; border-radius: 25px;">
+                <div id="Description">
+                    The decorative planter pot with a farmhouse style font fits the most home decor and can be paired with a variety of plants. This pair of flower pots make a great gift for your friends or family on birthdays, Mother's day, housewarming, etc.                </div>
+                <div id="Icons">
+                    <div id="IconPair">
+                        <div id="Icon">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3105/3105807.png" alt="Watering Rate">
+                        </div>
+                        <div id="Icon">
+                            2 Times per Week
+                        </div>
+                        <div id="Icon">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2698/2698240.png" alt="">        
+                        </div>
+                        <div id="Icon">
+                            6-8h per Day
+                        </div>
+                    </div>
+                    <div id="IconPair">
+                        <div id="Icon">
+                            <img src="https://cdn-icons-png.flaticon.com/512/93/93640.png" alt="">
+                        </div>
+                        <div id="Icon">
+                            Up to 25cm
+                        </div>
+                        <div id="Icon">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1670/1670075.png" alt="">
+                        </div>
+                        <div id="Icon">
+                            No need
+                        </div>
+                    </div>
+                </div>
+                <div id="RedirectToCart">
+                    <a href="">Add To Cart</a>
+                </div>
+            </div>
+        </div>
+        <div id="LineContainer">
+            <hr id="Line">
+        </div> 
+        <div id="TitleArea" style="margin-left: 5%; font-size: 2em;">
+            Similar Products
+        </div>
+        <div id="SimilarProductsArea">
+            <div id="ProductPair">
+                <div id="SimilarProduct">
+                    <img src="Crochet_Cat.png" alt="">
+                    <div id="Link">
+                        <a href="">Shop <span style="font-weight: bold; color: #38b6ff;">Cat</span></a>
+                    </div>
+                </div>
+                <div id="SimilarProduct">
+                    <img src="Pattern-Lama.png" alt="">
+                    <div id="Link">
+                        <a href="">Shop <span style="font-weight: bold; color: #ffde59;">Llama</span></a>
+                    </div>
+                </div>
+            </div>
+            <div id="ProductPair">
+                <div id="SimilarProduct">
+                    <img src="Keychain-3Fruits.png" alt="">
+                    <div id="Link">
+                        <a href="">Shop <span style="font-weight: bold; color: #38b6ff;">Fruits Combo</span></a>
+                    </div>
+                </div>
+                <div id="SimilarProduct">
+                    <img src="Pattern_Dog.png" alt="">
+                    <div id="Link">
+                        <a href="">Shop <span style="font-weight: bold; color: #ffde59;">Dog</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="LineContainer">
+            <hr id="Line2">
+        </div>
+    </div>
 
 <!--------------------------------------------------------------------------------------------------------------->
-
-    <footer>
-        <div id="footer">
+<footer>
+    <div id="footer">
+        <div id="FooterTopSection">
             <div id="footer-section">
                 <img id="logo" src="logo.png">
             </div>
             <div id="footer-section" class="AboutUs">
                 <h2>About Us</h2>
                 <p>
-                    At Plantopia, we're passionate about bringing nature into your life. 
-                    With a commitment to quality and sustainability, we offer a range of plants to transform your living spaces.
+                    Maison Sturm is a small business dedicated to crafting whimsical crocheted creations that bring joy to homes around the world. With a passion for creativity and a commitment to quality, we're on a mission to make your world a little bit cozier, one stitch at a time.
                 </p>
             </div>
+        </div>
+        <div id="FooterBottomSection">
             <div id="footer-section" class="ContactUs">
                 <h2>Contact us</h2>
                 <p>
@@ -47,11 +151,11 @@
                 </p>
                 <p>
                     <img src="instagram.png" style="margin-right: 0.5em;">
-                    <a href="">@Plantopia</a>
+                    <a href="">@MaisonSturm</a>
                 </p>
                 <p>
                     <img src="facebook.png" style="margin-right: 0.5em;">
-                    <a href="">@Plantopia</a>
+                    <a href="">@MaisonSturm</a>
                 </p>
             </div>
             <div id="footer-section" class="CustomerService">
@@ -61,10 +165,11 @@
                 <a href="TermsConditions.html">Terms & Conditions</a>
             </div>
         </div>
-        <div id="AllRights">
-            <p>©Plantopia 2023. All rights reserved.</p>
-        </div>
-    </footer>
+    </div>
+    <div id="AllRights">
+        <p>©MaisonSturm 2024. All rights reserved.</p>
+    </div>
+</footer>
 
 </body>
 <style>
@@ -123,13 +228,280 @@
         text-decoration: underline;
     }
 
+    @media screen and (min-width: 750px) {
+        #left-side,
+        #right-side {
+            width: 100%;
+        }
+    }
+
+    /* For wider screens, display the articles side by side */
+    @media screen and (max-width: 749px) {
+        #navbar {
+            display: flex;
+            flex-direction: column;
+            margin: 1em;
+        }
+        #left-side,
+        #right-side {
+            width: 100%; /* Adjust width as needed */
+            display: flex;
+            justify-content: center;
+        }
+        #left-side img{
+            display: none;
+        }
+    }
+
 /***************************************************************************************************************/
 
+    #TitleArea {
+        font-size: 2.5em;
+        font-weight: bold;
+        margin-bottom: 0.5em;
+        display: flex;
+        flex-direction: row;
+    }
 
+    #TitleArea a {
+        flex: 1;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 5%;
+    }
+
+    #ActualTitle {
+        flex: 8;
+    }
+
+    #LineContainer {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #Line {
+        border: none;
+        height: 3px;
+        background-color: black;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        width: 60%;
+        margin: 20px 0;
+    }
+
+    #Line2 {
+        border: none;
+        height: 3px;
+        background-color: black;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        width: 60%;
+        margin: 20px 0;
+    }
+
+    #MainArea {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #Half {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        margin: auto;
+        margin-top: 0;
+    }
+
+    .thumbnail-section {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .thumbnail-section img {
+        width: 14%;
+        height: auto;
+        margin-right: 10px;
+        cursor: pointer;
+        border-radius: 25px;
+        border: 2px solid white; /* Add this line to set a transparent border initially */
+    }
+
+    .thumbnail-section img.active {
+        border-color: black; /* Set the border color for the active thumbnail */
+    }
+
+    .displayed-image-section {
+        flex: 1;
+    }
+
+    .displayed-image-section img {
+        width: 100%;
+        height: auto;
+        border-radius: 25px;
+    }
+
+    #Description {
+        margin-bottom: 2em;
+        font-size: larger;
+        padding: 1em;
+    }
+
+    #Icons {
+        margin-bottom: 2em;
+        padding: 1em;
+        font-weight: bolder;
+    }
+
+    #IconPair {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 1em;
+        margin-left: 0.5em;
+    }
+
+    #Icon img {
+        width: 4em;
+        height: 4em;
+    }
+
+    #Icon {
+        margin: auto;
+        margin-left: 0;
+    }
+
+    #RedirectToCart {
+        text-align: center;
+        padding: 1em;
+    }
+
+    #RedirectToCart a {
+        border: 2px solid black;
+        background-color: white;
+        text-align: center;
+        width: 40%;
+        margin-top: 2.5em;
+        padding: 0.5em 2em;
+        color: black;
+        text-decoration: none;
+        transition: 0.5s ease ;
+        border-radius: 25px;
+    }
+
+    #RedirectToCart a:hover {
+        background-color: #f6dd9f;
+        border: 2px solid black;
+        letter-spacing: normal;
+    }
+
+    /* For wider screens, display the articles side by side */
+    @media screen and (max-width: 749px) {
+        #MainArea {
+            display: flex;
+            flex-direction: column;
+            margin: 1em;
+        }
+        #Half {
+            width: 100%; /* Adjust width as needed */
+            display: flex;
+            justify-content: center;
+        }
+        #Line {
+            width: 100%;
+        }
+    }
+
+    #SimilarProductsArea {
+        display: flex;
+        flex-direction: row;
+        width: 98%;
+        margin: auto;
+        background-color: #D4A373;
+        border-radius: 25px;
+    }
+
+    #ProductPair {
+        display: flex;
+        flex-direction: row;
+        margin-top: 2em;
+    }
+
+    #SimilarProduct {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2em;
+    }
+
+    #SimilarProduct img {
+        border-radius: 25px;
+        width: 90%;
+        height: auto;
+        margin: auto;
+    }
+
+    #Link {
+        text-align: center;
+    }
+
+    #Link a {
+        border: 2px solid black;
+        background-color: white;
+        text-align: center;
+        padding: 0.5em 2em;
+        color: black;
+        text-decoration: none;
+        transition: 0.5s ease ;
+        border-radius: 25px;
+    }
+
+    #Link a:hover {
+        background-color: #c8894c;
+        border: 2px solid black;
+        letter-spacing: normal;
+    }
+    @media screen and (min-width: 901px) {
+        #Line2 {
+            display: none;
+        }
+    }
+
+
+    @media screen and (min-width: 450px) and (max-width: 900px) {
+        #SimilarProductsArea {
+            display: flex;
+            flex-direction: column;
+        }
+        #ProductPair {
+            width: 100%; /* Adjust width as needed */
+            display: flex;
+            justify-content: center;
+        }
+        #Line, #Line2 {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 449px) {
+        #SimilarProductsArea {
+            display: flex;
+            flex-direction: column;
+        }
+        #ProductPair {
+            width: 100%; /* Adjust width as needed */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        #Line, #Line2 {
+            width: 100%;
+        }
+    }
 
 /***************************************************************************************************************/
 
-    footer {
+footer {
         height: auto;
         margin-top: 1em;
     }
@@ -143,9 +515,8 @@
     #footer-section {
         display: flex;
         flex-direction: column;
-        width: 100%;
-        margin-left: 1em;
-        margin-right: 1em;
+        width: 90%;
+        margin-right: 5%;
     }
 
     #footer-section a {
@@ -182,5 +553,48 @@
         text-align: center;
         padding-top: 0.5em;
     }
+
+    @media screen and (min-width: 700px) {
+        #footer-section {
+            width: 100%;
+        }
+        #FooterTopSection, 
+        #FooterBottomSection {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+    }
+
+    /* For wider screens, display the articles side by side */
+    @media screen and (max-width: 699px) {
+        #footer {
+            display: flex;
+            flex-direction: column;
+            margin: 1em;
+        }
+        #FooterTopSection, 
+        #FooterBottomSection {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+        #footer-section {
+            width: 50%;
+        }
+    }
 </style>
+<script>
+    function changeImage(index) {
+    var displayedImage = document.getElementById('displayed-image');
+    var thumbnailImages = document.querySelectorAll('.thumbnail-section img');
+
+    for (var i = 0; i < thumbnailImages.length; i++) {
+        thumbnailImages[i].classList.remove('active');
+    }
+
+    thumbnailImages[index - 1].classList.add('active');
+    displayedImage.src = thumbnailImages[index - 1].src;
+    }
+</script>
 </html>
