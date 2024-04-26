@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="logo-no_bg.png">
     <title>Terms & Conditions</title>
 </head>
@@ -63,7 +63,7 @@
             </div>
             <div id="footer-section" class="AboutUs">
                 <h2>About Us</h2>
-                <p>
+                <p style="padding-right: 5%;">
                     Maison Sturm is a small business dedicated to crafting whimsical crocheted creations that bring joy to homes around the world. With a passion for creativity and a commitment to quality, we're on a mission to make your world a little bit cozier, one stitch at a time.
                 </p>
             </div>
@@ -249,6 +249,7 @@
         margin-bottom: 1em;
         padding: 40px;
         border-radius: 75px;
+        text-align: justify;
     }
 
 /***************************************************************************************************************/
@@ -267,8 +268,6 @@ footer {
     #footer-section {
         display: flex;
         flex-direction: column;
-        width: 90%;
-        margin-right: 5%;
     }
 
     #footer-section a {
@@ -319,7 +318,7 @@ footer {
     }
 
     /* For wider screens, display the articles side by side */
-    @media screen and (max-width: 699px) {
+    @media screen and (min-width: 401px) and (max-width: 699px) {
         #footer {
             display: flex;
             flex-direction: column;
@@ -329,10 +328,27 @@ footer {
         #FooterBottomSection {
             display: flex;
             flex-direction: row;
-            width: 100%;
+            width: 95%;
         }
         #footer-section {
-            width: 50%;
+            width: 48%;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        #footer {
+            display: flex;
+            flex-direction: column;
+            margin: 1em;
+        }
+        #FooterTopSection, 
+        #FooterBottomSection {
+            display: flex;
+            flex-direction: column;
+            width: 95%;
+        }
+        #footer-section {
+            width: 95%;
         }
     }
 </style>
